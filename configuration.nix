@@ -13,8 +13,18 @@
       ./modules/configuration.nix 
       ./modules/firewall.nix
       ./modules/networking.nix
+      #./modules/wireguard.nix
       ./modules/programs.nix
       ./modules/users.nix
+
+      # service configuration
+      ./services/thelounge.nix
+      ./services/jellyfin.nix
+      ./services/sonarr.nix
+      ./services/radarr.nix
+      ./services/deluge.nix
+      ./services/jackett.nix
+      #./services/openvpn.nix
     ];
 
   # This value determines the NixOS release from which the default

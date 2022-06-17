@@ -9,15 +9,8 @@
   networking.interfaces = {
     enp3s0 = {
       useDHCP = true;
-      ipv4.addresses = [ {
-        address: 192.168.50.8;
-        prefixLength: 24;
-      } ];
     };
   };
-
-  networking.defaultGateway = "192.168.50.1";
-  networking.nameServers = [ "8.8.8.8" ];  
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
