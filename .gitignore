@@ -4,3 +4,4 @@ nixos-config
 secrets/*
 pia-vpn-config/
 *.backup
+services/pia/pia-login.txt
