@@ -6,6 +6,9 @@
 
   # networking.useDHCP = true; # this is deprecated
 
+  # ipv6 global
+  networking.enableIPv6 = true;
+
   networking.interfaces = {
     enp3s0 = {
       useDHCP = true;

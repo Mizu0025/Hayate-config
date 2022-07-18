@@ -3,3 +3,4 @@ result
 nixos-config
 secrets/*
 pia-vpn-config/
+*.backup

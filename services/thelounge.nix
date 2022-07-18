@@ -12,9 +12,15 @@
     extraConfig = {
       reverseProxy = false;
       theme="morning";
-      prefetch="true";
-      prefetchMaxImageSize="2048"; # kb
-      fileupload="true";
+      prefetch = true;
+      prefetchMaxImageSize=2048; # kb
+
+      # file upload
+      fileUpload = {
+	enable = true;
+	maxFileSize = 10240; # kb
+	baseUrl = null; # need reverse-proxy config!
+      };
 
       # default settings
       defaults = {

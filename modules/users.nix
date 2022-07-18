@@ -10,5 +10,9 @@
       password = "Pikachu-0025";
       extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     };
+
+    jellyfin = {
+      extraGroups = [ "render" ]; # allow transcoding
+    };
   };
 }

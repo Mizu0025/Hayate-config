@@ -10,15 +10,16 @@
     wget2
     git
     unzip
-    curl
+    pciutils
     
     # motd
     figlet
 
     # vpn
-    jq
-    wireguard-tools
     openvpn
+
+    # web server
+    nginx
 
     # irc client
     nodejs-18_x
