@@ -23,8 +23,9 @@
       ./services/radarr.nix
       ./services/deluge.nix
       ./services/jackett.nix
-      ./services/openvpn.nix
+      #./services/openvpn.nix
       ./services/nginx.nix
+      #./services/caddy.nix
     ];
 
   # This value determines the NixOS release from which the default
