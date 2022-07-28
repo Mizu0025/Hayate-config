@@ -10,7 +10,8 @@
     port = 9000;
 
     extraConfig = {
-      reverseProxy = false;
+      # host = undefined;
+      reverseProxy = true;
       theme="morning";
       prefetch = true;
       prefetchMaxImageSize=2048; # kb
@@ -19,7 +20,7 @@
       fileUpload = {
 	enable = true;
 	maxFileSize = 10240; # kb
-	baseUrl = null; # need reverse-proxy config!
+	baseUrl = "127.0.0.1"; # need reverse-proxy config!
       };
 
       # default settings
