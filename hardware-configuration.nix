@@ -23,6 +23,18 @@
       fsType = "vfat";
     };
 
+  fileSystems."/media" =
+    { device = "/dev/disk/by-uuid/60BB-19BF";
+      fsType = "exfat";
+      options = [
+	  "nofail"
+	  "x-systemd.device-timeout=1s"
+	  "uid=liam"
+	  "gid=removable-storage"
+	  "umask=002"
+	];
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/0e55de9d-6a5a-469d-847b-94cd9751d2c2"; }
     ];

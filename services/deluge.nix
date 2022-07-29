@@ -8,10 +8,10 @@
     enable = true;
     web.enable = true;
     
-    # web.port = 8112;
+    web.port = 8112;
 
     # user/group config
-    # user="deluge";
-    # group="deluge";
+    user="deluge";
+    group="removable-storage";
   };
 }

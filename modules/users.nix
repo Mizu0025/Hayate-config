@@ -15,4 +15,10 @@
       extraGroups = [ "render" ]; # allow transcoding
     };
   };
+
+  users.groups = {
+    removable-storage = {
+	members = [ "liam, jellyfin, sonarr, radarr" ];
+    };
+  };
 }

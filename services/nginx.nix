@@ -5,7 +5,13 @@
   services.nginx = {
         enable = true;
 
-        virtualHosts."localhost" = {
+        virtualHosts."liam-ddns.asuscomm.com" = {
+	  # ssl configuration
+	  forceSSL = true;
+	  enableACME = true;
+	  # all alias are added as extra domain on the certificate
+	  # alias = [  ];
+
 	  root = "/var/www/websites";
 	  extraConfig = ''
 		error_page 404 /error-page.html;

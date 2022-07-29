@@ -20,6 +20,7 @@
 
     # web server
     nginx
+    # caddy
 
     # irc client
     nodejs-18_x
