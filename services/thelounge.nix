@@ -14,13 +14,14 @@
       reverseProxy = true;
       theme="morning";
       prefetch = true;
-      prefetchMaxImageSize=2048; # kb
+      prefetchMaxImageSize=5120; # kb
 
       # file upload
       fileUpload = {
 	enable = true;
 	maxFileSize = 10240; # kb
-	baseUrl = "127.0.0.1"; # need reverse-proxy config!
+	# baseUrl needs reverse-proxy configured, else set to null
+	baseUrl = null;
       };
 
       # default settings

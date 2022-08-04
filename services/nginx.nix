@@ -39,13 +39,6 @@
 			proxy_read_timeout 1d;
 		'';
 	  };
-
-	  locations."/irc/uploads" = {
-		proxyPass = "http://127.0.0.1:9000/uploads/";
-		extraConfig = ''
-			proxy_set_header X-Forwarded-For $remote_addr;
-		'';
-	  };
 	};
   };
 }
