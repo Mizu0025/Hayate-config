@@ -29,6 +29,7 @@
     # media server
     jellyfin
     jellyfin-web
+    jellyfin-ffmpeg
     jftui
 
     # torrent client
