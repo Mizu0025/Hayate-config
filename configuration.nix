@@ -17,14 +17,14 @@
       ./modules/users.nix
 
       # service configuration
-      ./services/thelounge.nix
+      #./services/thelounge.nix
       ./services/jellyfin.nix
       ./services/sonarr.nix
       ./services/radarr.nix
       ./services/deluge.nix
       ./services/jackett.nix
       #./services/openvpn.nix
-      ./services/nginx.nix
+      #./services/nginx.nix
       #./services/caddy.nix
     ];
 

@@ -19,6 +19,9 @@
   users.groups = {
     removable-storage = {
 	members = [ "liam, jellyfin, sonarr, radarr" ];
+    };    
+    nixos = { #to modify the nix config
+	members = [ "liam" ];
     };
   };
 }
