@@ -25,8 +25,7 @@
       ./services/deluge.nix
       ./services/jackett.nix
       ./services/openvpn.nix
-      #./services/nginx.nix
-      ./services/caddy.nix
+      ./services/nginx.nix
   ];
 
   # This value determines the NixOS release from which the default
