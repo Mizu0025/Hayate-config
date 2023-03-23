@@ -1,2 +1,2 @@
-# Nanoha-config
-Configuration files for my Nanoha home server, running NixOS.
+# Hayate-config
+Configuration files for my Hayate home server, running NixOS.
