@@ -5,25 +5,22 @@
   services.nginx = {
         enable = true;
 
-        virtualHosts."liam-ddns.asuscomm.com" = {
+        virtualHosts."localhost" = {
 	  # ssl configuration
-	  forceSSL = true;
-	  enableACME = true;
+	  # forceSSL = true;
+	  # enableACME = true;
 	  # all alias are added as extra domain on the certificate
 	  # alias = [  ];
 
-	  root = "/var/www/websites";
+	  root = "/var/www/magical-hayate.net";
 	  extraConfig = ''
-		error_page 404 /error-page.html;
+		error_page 404 /error-404.html;
+		error_page 502 /error-502.html;
 		proxy_headers_hash_bucket_size 128;
 	  '';
 
 	  locations."/" = { 
 		index = "index.html";
-	  };
-
-	  locations."/error-page" = { 
-		index = "error-page.html";
 	  };
 
 	  locations."/irc/" = {

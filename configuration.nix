@@ -21,12 +21,13 @@
       ./services/jellyfin.nix
       ./services/sonarr.nix
       ./services/radarr.nix
+      ./services/lidarr.nix
       ./services/deluge.nix
       ./services/jackett.nix
-      #./services/openvpn.nix
+      ./services/openvpn.nix
       #./services/nginx.nix
-      #./services/caddy.nix
-    ];
+      ./services/caddy.nix
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

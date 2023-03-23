@@ -6,11 +6,11 @@
   # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   environment.systemPackages = with pkgs; [
     # general
-    wget2
+    wget
     git
     unzip
     pciutils
-    
+        
     # motd
     figlet
 
@@ -19,7 +19,6 @@
 
     # web server
     nginx
-    # caddy
 
     # irc client
     nodejs-18_x
@@ -38,6 +37,7 @@
     # media management
     sonarr
     radarr
+    lidarr
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
